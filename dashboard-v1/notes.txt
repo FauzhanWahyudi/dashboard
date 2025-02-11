@@ -1,0 +1,4 @@
+From (https://stackoverflow.com/questions/61836949/why-is-my-favicon-not-working-in-my-next-js-app) :
+    - Anyone facing the same issue in Nextjs latest version (v15), 
+        move your icon to app directory and just rename the favicon.ico to icon.ico
+
