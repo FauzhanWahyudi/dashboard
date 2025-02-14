@@ -1,0 +1,55 @@
+.navbar-container {
+  @apply top-0 mb-8 flex items-center justify-between rounded-none border border-gray-300 bg-white px-6 py-3 shadow-sm lg:mb-12;
+}
+
+.navbar-left {
+  @apply flex items-center gap-8;
+}
+
+.navbar-logo {
+  @apply h-4 w-4;
+}
+
+.navbar-item {
+  @apply flex cursor-pointer items-center gap-2 transition-all;
+}
+
+.navbar-icon {
+  @apply h-6 w-6 text-gray-900;
+}
+
+.navbar-text {
+  @apply text-sm font-medium text-gray-900 hover:text-purple-600 focus:outline-1 active:font-bold;
+}
+
+.navbar-right {
+  @apply flex items-center gap-6;
+}
+
+.navbar-notification {
+  @apply relative cursor-pointer;
+}
+
+.navbar-profile-coins {
+  @apply flex items-center gap-2;
+}
+
+.navbar-profile {
+  @apply flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-purple-300 px-3 py-1;
+}
+
+.navbar-profile-text {
+  @apply font-medium text-white;
+}
+
+.navbar-profile-image {
+  @apply h-8 w-8 rounded-full border-2 border-white;
+}
+
+.navbar-profile-badge {
+  @apply absolute right-[-24px] top-0 h-16 w-16;
+}
+
+.navbar-profile-dropdown-text {
+  @apply block px-4 py-2 text-gray-700 hover:bg-gray-100;
+}
