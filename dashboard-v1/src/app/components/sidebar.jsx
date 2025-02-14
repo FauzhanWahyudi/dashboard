@@ -13,14 +13,14 @@ import Link from "next/link";
 import { useState } from "react";
 
 const menuItems = [
-  { label: "Beranda", icon: <BerandaIcon />, link: "#" },
-  { label: "Video", icon: <VideoIcon />, link: "#" },
-  { label: "Avatar", icon: <AvatarIcon />, link: "#", disabled: true },
-  { label: "AI Tools", icon: <AI_Tools_Icon />, link: "#" },
-  { label: "Inspirasi", icon: <InspirasiIcon />, link: "#" },
-  { label: "Aset", icon: <AsetIcon />, link: "#" },
-  { label: "Brand Kit", icon: <BrandKitIcon />, link: "#" },
-  { label: "Kalender", icon: <KalenderIcon />, link: "#" },
+  { label: "Beranda", icon: <BerandaIcon />, link: "/" },
+  { label: "Video", icon: <VideoIcon />, link: "/" },
+  { label: "Avatar", icon: <AvatarIcon />, link: "/", disabled: true },
+  { label: "AI Tools", icon: <AI_Tools_Icon />, link: "/" },
+  { label: "Inspirasi", icon: <InspirasiIcon />, link: "/" },
+  { label: "Aset", icon: <AsetIcon />, link: "/" },
+  { label: "Brand Kit", icon: <BrandKitIcon />, link: "/" },
+  { label: "Kalender", icon: <KalenderIcon />, link: "/" },
 ];
 
 export default function SideBar() {
@@ -37,9 +37,9 @@ export default function SideBar() {
       </button>
       <div
         className={
-          "sidebar-container" +
+          (isOpen ? "translate-x-0" : "-translate-x-full") +
           " " +
-          (isOpen ? "translate-x-0" : "-translate-x-full")
+          "sidebar-container lg:translate-x-0"
         }
       >
         <div className="sidebar-header">

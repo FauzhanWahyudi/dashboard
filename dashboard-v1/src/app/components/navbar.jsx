@@ -4,6 +4,7 @@ import VideflyIcon from "./accessories/sidebar-icons/videfly-icon";
 import NavbarNotif from "./accessories/navbar-icons/navbar-notif";
 import CoinIcon from "./accessories/navbar-icons/coin-icon";
 import ProfileBadge from "./accessories/navbar-icons/profile-badge";
+import ProfileDropdown from "./ProfileDropdown";
 
 export default function Navbar() {
   return (
@@ -14,7 +15,7 @@ export default function Navbar() {
         <VideflyIcon />
 
         {/* Navbar Button */}
-        <Link href={"#"} className="navbar-item">
+        <Link href={"/"} className="navbar-item">
           <BerandaIcon className="navbar-icon" />
           <span className="navbar-text">Beranda</span>
         </Link>
@@ -31,14 +32,7 @@ export default function Navbar() {
             <CoinIcon />
             <span className="navbar-profile-text">5 Koin</span>
           </div>
-          <div className="relative">
-            <img
-              src="/images/Ellipse 2.png"
-              alt="Profile"
-              className="navbar-profile-image"
-            />
-            <ProfileBadge className={"navbar-profile-badge"} />
-          </div>
+          <ProfileDropdown username={"Fauzhan"} coins={100} />
         </div>
       </div>
     </nav>

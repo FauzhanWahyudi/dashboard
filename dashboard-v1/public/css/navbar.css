@@ -1,5 +1,5 @@
 .navbar-container {
-  @apply top-0 mb-8 flex items-center justify-between bg-white px-6 py-3 shadow-sm lg:mb-12;
+  @apply top-0 mb-8 flex items-center justify-between rounded-none border border-gray-300 bg-white px-6 py-3 shadow-sm lg:mb-12;
 }
 
 .navbar-left {
@@ -11,7 +11,7 @@
 }
 
 .navbar-item {
-  @apply flex items-center gap-2;
+  @apply flex cursor-pointer items-center gap-2 transition-all;
 }
 
 .navbar-icon {
@@ -19,7 +19,7 @@
 }
 
 .navbar-text {
-  @apply text-sm font-medium text-gray-900;
+  @apply text-sm font-medium text-gray-900 hover:text-purple-600 focus:outline-1 active:font-bold;
 }
 
 .navbar-right {
@@ -48,4 +48,8 @@
 
 .navbar-profile-badge {
   @apply absolute right-[-24px] top-0 h-16 w-16;
+}
+
+.navbar-profile-dropdown-text {
+  @apply block px-4 py-2 text-gray-700 hover:bg-gray-100;
 }

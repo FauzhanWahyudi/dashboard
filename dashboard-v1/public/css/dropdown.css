@@ -1,0 +1,27 @@
+.dropdown-container {
+  @apply w-full rounded-xl bg-white shadow-md ring-purple-500 transition-all hover:ring-2;
+}
+
+.dropdown-container-open {
+  @apply ring-2;
+}
+
+.dropdown-summary {
+  @apply flex cursor-pointer list-none items-center justify-between rounded-xl px-4 py-3;
+}
+
+.dropdown-arrow {
+  @apply h-5 w-5 transition-transform duration-300;
+}
+
+.dropdown-content {
+  @apply w-full rounded-xl bg-white shadow-lg transition-all duration-300 ease-in-out;
+}
+
+.dropdown-content-open {
+  @apply scale-100 opacity-100;
+}
+
+.dropdown-content-closed {
+  @apply scale-0 opacity-0;
+}
